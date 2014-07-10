@@ -1,0 +1,5 @@
+1. Relative performance:
+Running time for Pairs/Running time for Strips: 0.94
+
+2. Analysis:
+I used two different configurations in AWS for the two methods, so this computation can't exactly show the differences between the two methods, and also the performances heavily depend on the programmings, like with Python iterators and generators the running time would be much smaller. The problem with Strips method is that I used too many reducers, each one only got small memory to do the job, so some jobs are extremely slow. After I change the number of reducers with Pairs method, it's looks fine. From the view of communication cost, Strips method is better, since we use a dictionary as the value for each key, and the Pairs method needs to generate each pairs with the count as the value.

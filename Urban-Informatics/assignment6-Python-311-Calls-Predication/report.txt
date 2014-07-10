@@ -1,0 +1,15 @@
+Problem a. from the population vs incidents, and zipcode vs incidents plottings, we can see that there are a lot of zipcodes
+have low incident number, and these zipcodes are mainly outside the New York City. After deleting the data with low 
+incidents, we can see a more clear relationship between population and incident number.
+
+Problem b: the 3th order 10-fold CV model has the lowest RMSE, although sometimes the R^2 is not the biggest (depending on
+the folds created by the program).
+
+Problem c: the 5th order model without CV has the minimum RMSE, which might be a sign of overfitting (the data of 10-fold 
+CV model in this poltting is based on false shuffle setting).
+
+Problem d: to avoid potential overfitting, I choose the 3th order model and the whole data as my training database to do 
+the prediction work.
+
+Problem e: the expected RMSE would be around 13000 as shown in the plotting of Problem c. If there's more time, I might be
+able to separate the zipcodes in and out New York City, find more fit model for each part.

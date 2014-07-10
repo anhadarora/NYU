@@ -1,0 +1,31 @@
+1. Input/output format
+Stripes approach
+mappers output/ reducers input: '%s\t%s' % (key, value)
+Pairs approach
+mappers output/ reducers input: '%s\t%s\t%s' % (key1, key2, value)
+Final sort
+mappers output/ reducers input: '%s\t%s' % (key, value)
+
+2. Hadoop setting
+Stripes approach
+Configure Hadoop
+--site-key-value mapred.tasktracker.reduce.tasks.maximum=20
+Arguments
+-D mapred.reduce.tasks=300
+number of mappers decided by the system
+Pairs approach
+Configure Hadoop
+--site-key-value mapred.tasktracker.reduce.tasks.maximum=10
+Arguments
+-D mapred.reduce.tasks=100
+-D stream.num.map.output.key.fields=2 
+-D num.key.fields.for.partition=1
+-partitioner org.apache.hadoop.mapred.lib.KeyFieldBasedPartitioner
+number of mappers decided by the system
+Final sort
+Arguments
+-D mapred.reduce.tasks=1
+
+3. Running time
+Stripes approach: 7 Hours 40 minutes
+Pairs approach: 7 Hours 13 minutes

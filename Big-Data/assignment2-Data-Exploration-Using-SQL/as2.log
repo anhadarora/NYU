@@ -1,0 +1,475 @@
+mysql> source c:/users/gang/desktop/as2.sql
++----+
+|    |
++----+
+| Q1 |
++----+
+1 row in set, 1 warning (0.00 sec)
+
++-------+
+| count |
++-------+
+|   434 |
++-------+
+1 row in set (0.00 sec)
+
++----+
+|    |
++----+
+| Q2 |
++----+
+1 row in set, 1 warning (0.00 sec)
+
++-----------------------------+
+| station                     |
++-----------------------------+
+| CANAL STREET-BROADWAY       |
+| 8TH STREET & BROADWAY       |
+| WHITEHALL STREET            |
+| CITY HALL                   |
+| 34TH STREET & 6TH AVENUE    |
+| FIFTH AVENUE & 60TH STREET  |
+| RECTOR STREET-CHURCH STREET |
+| 14TH STREET-UNION SQUARE    |
+| 28TH STREET & BROADWAY      |
+| PRINCE STREET & BROADWAY    |
+| CANAL ST-LAFAYETTE ST EAST  |
+| 49TH STREET & 7TH AVENUE    |
+| CORTLANDT STREET            |
+| 57TH STREET & 7TH AVENUE    |
+| 23RD STREET & 5TH AVENUE    |
++-----------------------------+
+15 rows in set (0.00 sec)
+
++----+
+|    |
++----+
+| Q3 |
++----+
+1 row in set, 1 warning (0.00 sec)
+
++-----------------------------+---------+----------+---------+
+| station                     | lat     | long     | tickets |
++-----------------------------+---------+----------+---------+
+| 34TH STREET & 6TH AVENUE    | 40.7499 | -73.9875 |  323314 |
+| 14TH STREET-UNION SQUARE    | 40.7352 | -73.9898 |  237055 |
+| 57TH STREET & 7TH AVENUE    | 40.7656 | -73.9798 |   68514 |
+| 49TH STREET & 7TH AVENUE    | 40.7605 | -73.9834 |   63455 |
+| 23RD STREET & 5TH AVENUE    | 40.7414 | -73.9889 |   51092 |
+| FIFTH AVENUE & 60TH STREET  | 40.7647 | -73.9722 |   48027 |
+| CANAL ST-LAFAYETTE ST EAST  | 40.7183 | -74.0001 |   46392 |
+| WHITEHALL STREET            | 40.7019 | -74.0126 |   39050 |
+| 8TH STREET & BROADWAY       | 40.7306 | -73.9922 |   38129 |
+| PRINCE STREET & BROADWAY    | 40.7242 | -73.9976 |   37986 |
+| CANAL STREET-BROADWAY       | 40.7195 | -74.0016 |   27665 |
+| 28TH STREET & BROADWAY      | 40.7451 | -73.9885 |   26795 |
+| CORTLANDT STREET            | 40.7104 | -74.0111 |    9218 |
+| CITY HALL                   | 40.7135 | -74.0067 |    7397 |
+| RECTOR STREET-CHURCH STREET |  40.708 | -74.0127 |    5687 |
++-----------------------------+---------+----------+---------+
+15 rows in set, 1 warning (0.00 sec)
+
++----+
+|    |
++----+
+| Q4 |
++----+
+1 row in set, 1 warning (0.00 sec)
+
++--------------------------------+----------+
+| Station                        | increase |
++--------------------------------+----------+
+| 34TH STREET & 6TH AVENUE       |   -33254 |
+| 14TH STREET-UNION SQUARE       |   -12452 |
+| WHITEHALL STREET               |    -5186 |
+| 57TH STREET & 7TH AVENUE       |    -5059 |
+| 49TH STREET & 7TH AVENUE       |    -4992 |
+| FIFTH AVENUE & 60TH STREET     |    -3587 |
+| 23RD STREET & 5TH AVENUE       |    -3337 |
+| CANAL STREET-BROADWAY          |    -2075 |
+| PRINCE STREET & BROADWAY       |    -1620 |
+| CORTLANDT STREET               |    -1464 |
+| 28TH STREET & BROADWAY         |    -1334 |
+| CANAL ST-LAFAYETTE ST EAST     |    -1331 |
+| CITY HALL                      |     -824 |
+| RECTOR STREET-CHURCH STREET    |     -387 |
+| 8TH STREET & BROADWAY          |     -321 |
++--------------------------------+----------+
+15 rows in set (0.01 sec)
+
++----+
+|    |
++----+
+| Q5 |
++----+
+1 row in set, 1 warning (0.00 sec)
+
++--------------------------------+---------------+----------------+
+| Station                        | Feb1-Jan18 7d | Feb1-Jan18 30d |
++--------------------------------+---------------+----------------+
+| 14TH STREET-UNION SQUARE       |         -8483 |           2936 |
+| 23RD STREET & 5TH AVENUE       |         -1540 |           -310 |
+| 28TH STREET & BROADWAY         |         -1142 |            459 |
+| 34TH STREET & 6TH AVENUE       |        -12830 |          -4931 |
+| 49TH STREET & 7TH AVENUE       |         -3288 |          -1383 |
+| 57TH STREET & 7TH AVENUE       |         -2021 |           -963 |
+| 8TH STREET & BROADWAY          |         -1197 |           1861 |
+| CANAL ST-LAFAYETTE ST EAST     |         -2213 |           1388 |
+| CANAL STREET-BROADWAY          |         -1138 |             74 |
+| CITY HALL                      |          -336 |           -644 |
+| CORTLANDT STREET               |          -603 |           -388 |
+| FIFTH AVENUE & 60TH STREET     |         -1681 |             32 |
+| PRINCE STREET & BROADWAY       |         -2487 |           1209 |
+| RECTOR STREET-CHURCH STREET    |          -176 |            171 |
+| WHITEHALL STREET               |         -2620 |          -1728 |
++--------------------------------+---------------+----------------+
+15 rows in set (0.01 sec)
+
++----+
+|    |
++----+
+| Q6 |
++----+
+1 row in set, 1 warning (0.00 sec)
+
++--------------------------------+----------+
+| station                        | increase |
++--------------------------------+----------+
+| 116TH STREET-COLUMBIA          |    17119 |
++--------------------------------+----------+
+1 row in set, 637 warnings (0.02 sec)
+
++----+
+|    |
++----+
+| Q7 |
++----+
+1 row in set, 1 warning (0.00 sec)
+
++--------------------------------+----------+
+| station                        | increase |
++--------------------------------+----------+
+| 42ND STREET & GRAND CENTRAL    |   -34540 |
++--------------------------------+----------+
+1 row in set, 637 warnings (0.01 sec)
+
++----+
+|    |
++----+
+| Q8 |
++----+
+1 row in set, 1 warning (0.00 sec)
+
++--------------------------------+----------+
+| station                        | increase |
++--------------------------------+----------+
+| 42ND STREET & GRAND CENTRAL    |   -34540 |
+| 34TH STREET & 6TH AVENUE       |   -33254 |
+| 42ND STREET & 8TH AVENUE       |   -31600 |
+| 34TH STREET & 8TH AVENUE       |   -26616 |
+| WALL STREET                    |   -19742 |
+| 47-50 STREETS/ROCKEFELLER      |   -19627 |
+| AIRTRAIN JAMAICA CENTER 1      |   -19294 |
+| 34TH STREET - PENN STATION     |   -18830 |
+| 34TH STREET & 7TH AVENUE       |   -18728 |
+| FULTON STREET                  |   -16353 |
+| PARK PLACE                     |   -15801 |
+| 42ND STREET/TIMES SQUARE       |   -14377 |
+| BARCLAYS CENTER                |   -14156 |
+| 14TH STREET-UNION SQUARE       |   -12452 |
+| FIFTH AVENUE                   |   -11068 |
+| BROOKLYN BRIDGE                |   -10702 |
+| 42ND STREET & 6TH AVENUE       |   -10615 |
+| LEXINGTON AVENUE               |   -10312 |
+| AIRTRAIN @ HOWARD BEACH        |   -10049 |
+| 86TH STREET-LEXINGTON AVE      |    -9422 |
+| BOWLING GREEN & BATTERY PL     |    -8929 |
+| BOROUGH HALL - COURT STREET    |    -8356 |
+| 23RD STREET-6TH AVENUE         |    -8073 |
+| 59TH STREET & LEXINGTON AVE    |    -7964 |
+| JAY ST-METROTECH               |    -7345 |
+| FULTON & WILLIAM STREETS       |    -7160 |
+| PA-PATH WORLD TRADE CNTR       |    -7028 |
+| 77TH STREET-LEXINGTON AVE      |    -5917 |
+| 7TH AVENUE-PARK PLACE          |    -5877 |
+| 50TH STREET & 7TH AVENUE       |    -5699 |
+| CHURCH AVENUE                  |    -5594 |
+| 57TH STREET-6TH AVENUE         |    -5588 |
+| 96TH STREET-LEXINGTON AVE      |    -5491 |
+| ROOSEVELT AVE/JACKSON HTS      |    -5192 |
+| JAMAICA CENTER-PARSONS BLVD    |    -5192 |
+| WHITEHALL STREET               |    -5186 |
+| 96TH STREET-BROADWAY           |    -5097 |
+| 57TH STREET & 7TH AVENUE       |    -5059 |
+| 49TH STREET & 7TH AVENUE       |    -4992 |
+| MAIN STREET                    |    -4946 |
+| 59TH STREET/COLUMBUS CIRCLE    |    -4651 |
+| COURT SQ-23 ST                 |    -4510 |
+| KINGS HIGHWAY-EAST 16TH ST     |    -4486 |
+| 179TH STREET & HILLSIDE AVE    |    -4407 |
+| 71ST AVE-CONTINENTAL AVE       |    -4306 |
+| 23RD STREET-PARK AVE SOUTH     |    -4288 |
+| SUTPHIN BOULEVARD              |    -4258 |
+| UTICA AVENUE                   |    -4228 |
+| 125TH STREET-LEXINGTON AVE     |    -4177 |
+| SEVENTH AVENUE & WEST 53RD     |    -4145 |
+| 63RD STREET-LEXINGTON AVE      |    -4107 |
+| CHAMBERS STREET                |    -3989 |
+| HUNTERS PT AVE-49TH AVE        |    -3841 |
+| WOODHAVEN BLVD-QUEENS BLVD     |    -3759 |
+| 51ST STREET & LEXINGTON AVE    |    -3635 |
+| 33RD STREET-QUEENS BLVD        |    -3620 |
+| FIFTH AVENUE & 60TH STREET     |    -3587 |
+| CANAL STREET-LISPENARD ST      |    -3570 |
+| HOUSTON STREET-VARICK ST       |    -3532 |
+| 28TH STREET-PARK AVE SOUTH     |    -3400 |
+| 7TH AVENUE-9TH STREET          |    -3352 |
+| 23RD STREET & 5TH AVENUE       |    -3337 |
+| ST GEORGE TERMINAL             |    -3276 |
+| 175TH STREET/FT WASHINGTON     |    -3271 |
+| FIFTH AVENUE & 42ND STREET     |    -3257 |
+| STEINWAY ST-BROADWAY           |    -3204 |
+| 8TH AVENUE-14TH STREET         |    -3124 |
+| PROSPECT PARK-EMPIRE BLVD      |    -3087 |
+| BROADWAY LAFAYETTE-BLEECKER    |    -3042 |
+| 125TH STREET                   |    -3039 |
+| 50TH STREET-8TH AVENUE         |    -2974 |
+| NEWKIRK PLAZA                  |    -2970 |
+| SPRING STREET-6TH AVENUE       |    -2954 |
+| 23RD STREET & 8TH AVENUE       |    -2936 |
+| UNION TURNPIKE-KEW GARDENS     |    -2918 |
+| 63RD DRIVE-REGO PARK           |    -2879 |
+| BERGEN STREET-SMITH STREET     |    -2828 |
+| 103RD ST-ROOSEVELT AVE         |    -2793 |
+| PA-PATH NEWARK                 |    -2778 |
+| 161ST STREET-YANKEE STADIUM    |    -2675 |
+| HIGH ST-CADMAN PLAZA WEST      |    -2617 |
+| 8TH AVENUE-62ND STREET         |    -2534 |
+| CARROLL ST-PRESIDENT ST        |    -2518 |
+| 177TH STREET-PARKCHESTER       |    -2508 |
+| SHEEPSHEAD BAY ROAD            |    -2485 |
+| DITMARS BLVD & 31ST STREET     |    -2474 |
+| PA-PATH HOBOKEN                |    -2449 |
+| ROCKAWAY PKWY-GLENWOOD RD      |    -2439 |
+| JUNCTION BLVD-ROOSEVELT AVE    |    -2414 |
+| ELMHURST AVE-BROADWAY          |    -2344 |
+| 33RD STREET-PARK AVENUE        |    -2314 |
+| GRAND AVE-QUEENS BOULEVARD     |    -2301 |
+| RECTOR STREET-GREENWICH ST     |    -2288 |
+| MARCY AVENUE-BROADWAY          |    -2283 |
+| QUEENS PLAZA-JACKSON AVE       |    -2259 |
+| 110TH STREET-LEXINGTON AVE     |    -2258 |
+| WEST 4TH ST-WASHINGTON SQ      |    -2255 |
+| UTICA AVE-STUYVESANT AVE       |    -2235 |
+| 103RD STREET-LEXINGTON AVE     |    -2219 |
+| 46TH STREET-BROADWAY           |    -2209 |
+| 36TH STREET-4TH AVENUE         |    -2207 |
+| 149TH STREET & 3RD AVENUE      |    -2192 |
+| PA-PATH PAVONIA/NEWPORT        |    -2152 |
+| 21ST STREET-QUEENSBRIDGE       |    -2135 |
+| NOSTRAND AVE-FULTON ST         |    -2131 |
+| BROAD STREET & WALL STREET     |    -2128 |
+| 149TH ST-GRAND CONCOURSE       |    -2082 |
+| CANAL STREET-BROADWAY          |    -2075 |
+| 125TH STREET-LENOX AVENUE      |    -2065 |
+| 145TH STREET                   |    -2047 |
+| 42ND STREET & 3RD AVENUE       |    -2039 |
+| PA-PATH EXCHANGE PLACE         |    -2030 |
+| EUCLID AVE-PITKIN AVE          |    -1983 |
+| JACKSON AVENUE-VERNON BLVD     |    -1979 |
+| FORT HAMILTON PARKWAY-62ND     |    -1973 |
+| CORTELYOU RD-EAST 16TH ST      |    -1959 |
+| FRANKLIN AVE/EASTERN PKWY      |    -1942 |
+| 67TH AVENUE-QUEENS BLVD        |    -1919 |
+| BRIGHTON BEACH-CONEY ISLAND    |    -1917 |
+| 2ND AVENUE-HOUSTON STREET      |    -1885 |
+| CANAL STREET                   |    -1849 |
+| BOWERY STREET-DELANCEY ST      |    -1832 |
+| ASTORIA BLVD & 31ST STREET     |    -1812 |
+| ZEREGA AVE-WESTCHESTER AVE     |    -1811 |
+| 116TH STREET-LEXINGTON AVE     |    -1809 |
+| AVENUE J-EAST 16TH STREET      |    -1804 |
+| 61ST STREET-ROOSEVELT AVE      |    -1794 |
+| 18TH AVENUE-62ND STREET        |    -1774 |
+| 86TH ST-CENTRAL PARK WEST      |    -1771 |
+| HOYT ST-SCHERMERHORN ST        |    -1755 |
+| 14TH STREET-6TH AVENUE         |    -1745 |
+| LEFFERTS BLVD-LIBERTY AVE      |    -1739 |
+| FLATBUSH AVE & NOSTRAND AV     |    -1736 |
+| BAY PARKWAY-66TH STREET        |    -1734 |
+| 59TH STREET-4TH AVENUE         |    -1717 |
+| EAST BROADWAY-MADISON ST       |    -1702 |
+| 4TH AVENUE-9TH STREET          |    -1689 |
+| AVENUE U-EAST 16TH STREET      |    -1661 |
+| 90TH STREET/ELMHURST AVENUE    |    -1651 |
+| BOWLING GREEN & BROADWAY       |    -1633 |
+| GREENPOINT AVE                 |    -1625 |
+| PRINCE STREET & BROADWAY       |    -1620 |
+| GRAND ST-CHRISTIE ST           |    -1593 |
+| BAYCHESTER AVE-TILLOTSON       |    -1588 |
+| 72ND STREET & BROADWAY         |    -1585 |
+| BUHRE AVE-WESTCHESTER AVE      |    -1584 |
+| PARKSIDE AVE-OCEAN AVE         |    -1580 |
+| GRAHAM AVE-METROPOLITAN AVE    |    -1574 |
+| PA-PATH GROVE ST               |    -1571 |
+| 116TH STREET-LENOX AVENUE      |    -1563 |
+| 111TH STREET-ROOSEVELT AVE     |    -1550 |
+| MYRTLE AVENUE-BROADWAY         |    -1529 |
+| KINGS HIGHWAY-WEST 7TH ST      |    -1522 |
+| 46TH ST-BLISS ST               |    -1497 |
+| 86TH STREET-BROADWAY           |    -1487 |
+| PA-PATH JOURNAL SQUARE         |    -1472 |
+| CORTLANDT STREET               |    -1464 |
+| HUNTS PT AVE-SOUTHERN BLVD     |    -1437 |
+| MYRTLE AVE-GATES AVENUE        |    -1436 |
+| 135TH STREET-LENOX AVENUE      |    -1417 |
+| 82ND STREET-JACKSON HEIGHTS    |    -1407 |
+| MOSHOLU PARKWAY-JEROME AVE     |    -1383 |
+| 174TH STREET-SOUTHERN BLVD     |    -1369 |
+| STILLWELL AVE-CONEY ISLAND     |    -1344 |
+| 15TH ST-PROSPECT PARK WEST     |    -1340 |
+| DEKALB AVE-WYCKOFF AVE         |    -1339 |
+| 28TH STREET & BROADWAY         |    -1334 |
+| CANAL ST-LAFAYETTE ST EAST     |    -1331 |
+| NORTHERN BLVD-BROADWAY         |    -1328 |
+| ROCKAWAY BLVD-LIBERTY AVE      |    -1326 |
+| QUEENSBORO PLAZA               |    -1312 |
+| PROSPECT AVENUE-WESTCHESTER    |    -1303 |
+| BROADWAY-EAST NEW YORK         |    -1301 |
+| 170TH STREET-JEROME AVENUE     |    -1299 |
+| 52ND STREET-ROOSEVELT AVE      |    -1299 |
+| SIMPSON ST-WESTCHESTER AVE     |    -1296 |
+| SUTTER AVENUE                  |    -1296 |
+| 30TH AVENUE & 31ST STREET      |    -1285 |
+| 231ST STREET                   |    -1266 |
+| FLUSHING AVE-BROADWAY          |    -1262 |
+| SUTPHIN BLVD-HILLSIDE AVE      |    -1255 |
+| 168TH STREET & BROADWAY        |    -1246 |
+| EAST 180TH ST-MORRIS PARK      |    -1236 |
+| PARSONS BLVD & HILLSIDE AV     |    -1236 |
+| 181ST STREET-FT WASH AVE       |    -1234 |
+| ESSEX ST-DELANCEY ST           |    -1227 |
+| BROADWAY & 31ST STREET         |    -1222 |
+| DYRE AVENUE-LIGHT STREET       |    -1214 |
+| 20TH AVENUE-62ND STREET        |    -1207 |
+| NEVINS STREET                  |    -1207 |
+| 96TH ST-CENTRAL PARK WEST      |    -1204 |
+| ROOSEVELT ISLAND               |    -1198 |
+| 138TH STREET-3RD AVE           |    -1184 |
+| 40TH STREET-LOWERY STREET      |    -1182 |
+| FORDHAM ROAD & JEROME AVE      |    -1180 |
+| 68TH STREET-HUNTER COLLEGE     |    -1176 |
+| HUDSON STREET-78TH STREET      |    -1171 |
+| CHURCH AVE-MCDONALD AVE        |    -1169 |
+| 65TH STREET-BROADWAY           |    -1164 |
+| AVENUE M-EAST 16TH STREET      |    -1164 |
+| PELHAM PKWY-WHITE PLAINS RD    |    -1163 |
+| GRANT AVENUE-PITKIN AVENUE     |    -1154 |
+| 169TH STREET & HILLSIDE AVE    |    -1125 |
+| FT HAMILTON PKY-GREENWOOD      |    -1115 |
+| BLEECKER ST-LAFAYETTE ST       |    -1110 |
+| EASTERN PARKWAY                |    -1095 |
+| 36TH STREET-NORTHERN BLVD      |    -1069 |
+| TREMONT AVE-179TH ST           |    -1063 |
+| EAST 105TH ST-FARRAGUT ROAD    |    -1063 |
+| ALLERTON AV-WHITE PLAINS RD    |    -1038 |
+| GUN HILL ROAD-SEYMOUR          |    -1029 |
+| 79TH STREET-17TH AVENUE        |    -1024 |
+| 53RD STREET-4TH AVENUE         |    -1020 |
+| SARATOGA AVENUE                |    -1018 |
+| FRANKLIN AVENUE-FULTON ST      |    -1017 |
+| BOYD STREET-88TH STREET        |    -1017 |
+| 72ND STREET-CENTRAL PK WEST    |    -1015 |
+| KINGSBRIDGE RD-JEROME AVE      |    -1011 |
+| ROCKAWAY AVENUE                |    -1005 |
++--------------------------------+----------+
+219 rows in set (0.03 sec)
+
++----+
+|    |
++----+
+| Q9 |
++----+
+1 row in set, 1 warning (0.00 sec)
+
++------------+
+| average    |
++------------+
+| -5148.2000 |
++------------+
+1 row in set (0.00 sec)
+
++-----+
+|     |
++-----+
+| Q10 |
++-----+
+1 row in set, 1 warning (0.00 sec)
+
++----------+
+| sum      |
++----------+
+| 12905094 |
++----------+
+1 row in set (0.00 sec)
+
++-----+
+|     |
++-----+
+| Q11 |
++-----+
+1 row in set, 1 warning (0.00 sec)
+
++-----------------------------+
+| F train stations            |
++-----------------------------+
+| 14TH STREET-6TH AVENUE      |
+| 47-50 STREETS/ROCKEFELLER   |
+| FT HAMILTON PKY-GREENWOOD   |
+| BROADWAY LAFAYETTE-BLEECKER |
+| 71ST AVE-CONTINENTAL AVE    |
+| SMITH STREET-9TH STREET     |
+| SUTPHIN BLVD-HILLSIDE AVE   |
+| 75TH AVENUE-QUEENS BLVD     |
+| YORK STREET-JAY STREET      |
+| PARSONS BLVD & HILLSIDE AV  |
+| 57TH STREET-6TH AVENUE      |
+| 21ST STREET-QUEENSBRIDGE    |
+| 23RD STREET-6TH AVENUE      |
+| AVENUE N-MCDONALD AVENUE    |
+| 34TH STREET & 6TH AVENUE    |
+| 179TH STREET & HILLSIDE AVE |
+| FIFTH AVENUE & 42ND STREET  |
+| KINGS HIGHWAY-MCDONALD AVE  |
+| MCDONALD AVE-22ND AVE       |
+| 2ND AVENUE-HOUSTON STREET   |
+| 14TH STREET & 7TH AVENUE    |
+| ROOSEVELT ISLAND            |
+| ROOSEVELT AVE/JACKSON HTS   |
+| AVENUE X-MCDONALD AVENUE    |
+| AVENUE U-MCDONALD AVENUE    |
+| 63RD STREET-LEXINGTON AVE   |
+| 15TH ST-PROSPECT PARK WEST  |
+| WEST 4TH ST-WASHINGTON SQ   |
+| AVENUE P-MCDONALD AVENUE    |
+| DITMAS AVE-MCDONALD AVE     |
+| JAY ST-METROTECH            |
+| 18TH AVE-MCDONALD AVE       |
+| CARROLL ST-PRESIDENT ST     |
+| AVENUE I-MCDONALD AVENUE    |
+| 7TH AVENUE-9TH STREET       |
+| 169TH STREET & HILLSIDE AVE |
+| 42ND STREET & 6TH AVENUE    |
+| BERGEN STREET-SMITH STREET  |
+| 4TH AVENUE-9TH STREET       |
+| UNION TURNPIKE-KEW GARDENS  |
+| ESSEX ST-DELANCEY ST        |
+| CHURCH AVE-MCDONALD AVE     |
+| WEST 6TH STREET-SURF AVENUE |
+| NEPTUNE AVE-MCDONALD AVENUE |
+| STILLWELL AVE-CONEY ISLAND  |
+| EAST BROADWAY-MADISON ST    |
+| VAN WYCK BLVD-MAIN STREET   |
++-----------------------------+
+47 rows in set (0.00 sec)
+

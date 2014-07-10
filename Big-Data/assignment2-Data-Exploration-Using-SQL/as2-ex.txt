@@ -1,0 +1,7 @@
+There are several ways to improve and optimize the design of this database:
+
+1. Declare columns in the tables to be NOT NULL, which can make operations faster and save storage space.
+
+2. Create column with anto-increment values in the table "fares_jan18", "fares_feb1" and "stations" as primary key column of each table to fast queries.
+
+3. If there's only few queries on "sendis" and "students" columns in the table "fares_jan18" and "fares_feb1", then these two columns can be splitted from the original tables and use foreign keys to associate with the rest parts, which can make the queried tables smaller and thus fast queries.
